@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        <form class="add-player-form" action="" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="description" id="description" placeholder="Description" required>
+                </div>
+                <!-- <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="time" id="time" placeholder="Time" required hidden>
+                </div> -->
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="category" id="category" placeholder="Category" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Add Task</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
